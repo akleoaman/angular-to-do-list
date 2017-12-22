@@ -1,5 +1,5 @@
 # AngularToDoList
-
+This application is developed using Angular. It is basially for person to mention tasks one want to do and completed it.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ## Development server

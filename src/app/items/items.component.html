@@ -1,0 +1,21 @@
+
+  <h2>My ITEMS</h2>
+  <div>
+    <label>Item name:
+      <input #itemTask />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(itemTask.value); itemTask.value=''">
+      add
+    </button>
+  </div>
+
+  <ul class="items">
+    <li *ngFor="let item of items">
+      <a routerLink="/detail/{{item.sno}}">
+        <span class="badge">{{item.sno}}</span> {{item.task}}
+      </a>
+      <button class="delete" title="delete item"
+      (click)="delete(item)">x</button>
+    </li>
+  </ul>

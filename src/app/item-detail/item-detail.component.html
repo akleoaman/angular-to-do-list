@@ -1,0 +1,14 @@
+
+    <div *ngIf="item">
+        {{item.task | uppercase }}
+        <div><span>sno: </span>{{item.sno}}</div>
+        <div>
+          <label>task:
+            <input [(ngModel)]="item.task" placeholder="task">
+          </label>
+          <button (click)="goBack()">go back</button>
+          <button (click)="save()">save</button>
+        </div>
+      </div>
+
+
